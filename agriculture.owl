@@ -1,0 +1,2369 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.example.org/sasfo"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.example.org/sasfo">
+    <Prefix name="" IRI="http://www.example.org/sasfo#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="sasfo" IRI="http://www.example.org/sasfo#"/>
+    <Declaration>
+        <Class IRI="#ClaySoil"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ClimateCondition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Coconut"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Crop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Farm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fertilizer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HighRainfall"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HighTemperature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IrrigationMethod"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LateriteSoil"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LoamySoil"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LowRainfall"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Maize"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ModerateTemperature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nitrogen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nutrient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Observation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Paddy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Phosphorus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Potassium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SandySoil"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SoilType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vegetable"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#affectedByPest"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#generatesObservation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#growsInSoil"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDeficiency"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSensor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#locatedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#observedAtFarm"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#recommendedFertilizer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#requiresNutrient"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#suitableClimate"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#treatsDeficiency"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usesIrrigation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasFarmSize"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMoistureLevel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasNutrientPercentage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPHLevel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasRainfallValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSensorValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTemperatureValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTimestamp"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Aphids"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ClaySoil1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CoconutCrop1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CoconutRhinocerosBeetle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DAPFertilizer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DripIrrigation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Farm1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Farm2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Farm3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FloodIrrigation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HighTemperatureClimate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LoamySoil1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LoamySoil2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LoamySoil3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LowRainfallClimate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MaizeBorer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MaizeCrop1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ModerateTemperatureClimate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MuriateOfPotash"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NPK_15_15_15"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NitrogenN"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Observation1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Observation2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Observation3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PaddyCrop1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PhosphorusP"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PotassiumK"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rice1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RiceWeevil"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SandySoil1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sensor1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sensor2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sensor3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SprinklerIrrigation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TeaCrop1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TeaMosquito"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UreaFertilizer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VegetableCrop1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WetZoneClimate"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#ClaySoil"/>
+        <Class IRI="#SoilType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Coconut"/>
+        <Class IRI="#Crop"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Crop"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#growsInSoil"/>
+            <Class IRI="#SoilType"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Crop"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#requiresNutrient"/>
+            <Class IRI="#Nutrient"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Farm"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#hasSensor"/>
+            <Class IRI="#Sensor"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fertilizer"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#treatsDeficiency"/>
+            <Class IRI="#Nutrient"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HighRainfall"/>
+        <Class IRI="#ClimateCondition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HighTemperature"/>
+        <Class IRI="#ClimateCondition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LateriteSoil"/>
+        <Class IRI="#SoilType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LoamySoil"/>
+        <Class IRI="#SoilType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LowRainfall"/>
+        <Class IRI="#ClimateCondition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Maize"/>
+        <Class IRI="#Crop"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ModerateTemperature"/>
+        <Class IRI="#ClimateCondition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nitrogen"/>
+        <Class IRI="#Nutrient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Paddy"/>
+        <Class IRI="#Crop"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Phosphorus"/>
+        <Class IRI="#Nutrient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Potassium"/>
+        <Class IRI="#Nutrient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SandySoil"/>
+        <Class IRI="#SoilType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tea"/>
+        <Class IRI="#Crop"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vegetable"/>
+        <Class IRI="#Crop"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#ClaySoil"/>
+        <Class IRI="#ClimateCondition"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ClaySoil"/>
+        <Class IRI="#Coconut"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ClaySoil"/>
+        <Class IRI="#Crop"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ClaySoil"/>
+        <Class IRI="#Farm"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ClaySoil"/>
+        <Class IRI="#Fertilizer"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ClaySoil"/>
+        <Class IRI="#HighRainfall"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ClaySoil"/>
+        <Class IRI="#HighTemperature"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ClaySoil"/>
+        <Class IRI="#IrrigationMethod"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ClaySoil"/>
+        <Class IRI="#LateriteSoil"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ClaySoil"/>
+        <Class IRI="#LoamySoil"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ClaySoil"/>
+        <Class IRI="#LowRainfall"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ClaySoil"/>
+        <Class IRI="#Maize"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ClaySoil"/>
+        <Class IRI="#ModerateTemperature"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ClaySoil"/>
+        <Class IRI="#Nitrogen"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ClaySoil"/>
+        <Class IRI="#Nutrient"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ClaySoil"/>
+        <Class IRI="#Observation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ClaySoil"/>
+        <Class IRI="#Paddy"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ClaySoil"/>
+        <Class IRI="#Pest"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ClaySoil"/>
+        <Class IRI="#Phosphorus"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ClaySoil"/>
+        <Class IRI="#Potassium"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ClaySoil"/>
+        <Class IRI="#SandySoil"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ClaySoil"/>
+        <Class IRI="#Sensor"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ClaySoil"/>
+        <Class IRI="#Tea"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ClaySoil"/>
+        <Class IRI="#Vegetable"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ClimateCondition"/>
+        <Class IRI="#Coconut"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ClimateCondition"/>
+        <Class IRI="#Crop"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ClimateCondition"/>
+        <Class IRI="#Crop"/>
+        <Class IRI="#Farm"/>
+        <Class IRI="#Fertilizer"/>
+        <Class IRI="#IrrigationMethod"/>
+        <Class IRI="#Nutrient"/>
+        <Class IRI="#Observation"/>
+        <Class IRI="#Pest"/>
+        <Class IRI="#Sensor"/>
+        <Class IRI="#SoilType"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ClimateCondition"/>
+        <Class IRI="#Farm"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ClimateCondition"/>
+        <Class IRI="#Fertilizer"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ClimateCondition"/>
+        <Class IRI="#IrrigationMethod"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ClimateCondition"/>
+        <Class IRI="#LateriteSoil"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ClimateCondition"/>
+        <Class IRI="#LoamySoil"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ClimateCondition"/>
+        <Class IRI="#Maize"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ClimateCondition"/>
+        <Class IRI="#Nitrogen"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ClimateCondition"/>
+        <Class IRI="#Nutrient"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ClimateCondition"/>
+        <Class IRI="#Observation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ClimateCondition"/>
+        <Class IRI="#Paddy"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ClimateCondition"/>
+        <Class IRI="#Pest"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ClimateCondition"/>
+        <Class IRI="#Phosphorus"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ClimateCondition"/>
+        <Class IRI="#Potassium"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ClimateCondition"/>
+        <Class IRI="#SandySoil"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ClimateCondition"/>
+        <Class IRI="#Sensor"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ClimateCondition"/>
+        <Class IRI="#SoilType"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ClimateCondition"/>
+        <Class IRI="#Tea"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ClimateCondition"/>
+        <Class IRI="#Vegetable"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Coconut"/>
+        <Class IRI="#Farm"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Coconut"/>
+        <Class IRI="#Fertilizer"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Coconut"/>
+        <Class IRI="#HighRainfall"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Coconut"/>
+        <Class IRI="#HighTemperature"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Coconut"/>
+        <Class IRI="#IrrigationMethod"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Coconut"/>
+        <Class IRI="#LateriteSoil"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Coconut"/>
+        <Class IRI="#LoamySoil"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Coconut"/>
+        <Class IRI="#LowRainfall"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Coconut"/>
+        <Class IRI="#Maize"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Coconut"/>
+        <Class IRI="#ModerateTemperature"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Coconut"/>
+        <Class IRI="#Nitrogen"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Coconut"/>
+        <Class IRI="#Nutrient"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Coconut"/>
+        <Class IRI="#Observation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Coconut"/>
+        <Class IRI="#Paddy"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Coconut"/>
+        <Class IRI="#Pest"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Coconut"/>
+        <Class IRI="#Phosphorus"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Coconut"/>
+        <Class IRI="#Potassium"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Coconut"/>
+        <Class IRI="#SandySoil"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Coconut"/>
+        <Class IRI="#Sensor"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Coconut"/>
+        <Class IRI="#SoilType"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Coconut"/>
+        <Class IRI="#Tea"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Coconut"/>
+        <Class IRI="#Vegetable"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Crop"/>
+        <Class IRI="#Farm"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Crop"/>
+        <Class IRI="#Fertilizer"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Crop"/>
+        <Class IRI="#HighRainfall"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Crop"/>
+        <Class IRI="#HighTemperature"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Crop"/>
+        <Class IRI="#IrrigationMethod"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Crop"/>
+        <Class IRI="#LateriteSoil"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Crop"/>
+        <Class IRI="#LoamySoil"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Crop"/>
+        <Class IRI="#LowRainfall"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Crop"/>
+        <Class IRI="#ModerateTemperature"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Crop"/>
+        <Class IRI="#Nitrogen"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Crop"/>
+        <Class IRI="#Nutrient"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Crop"/>
+        <Class IRI="#Observation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Crop"/>
+        <Class IRI="#Pest"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Crop"/>
+        <Class IRI="#Phosphorus"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Crop"/>
+        <Class IRI="#Potassium"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Crop"/>
+        <Class IRI="#SandySoil"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Crop"/>
+        <Class IRI="#Sensor"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Crop"/>
+        <Class IRI="#SoilType"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Farm"/>
+        <Class IRI="#Fertilizer"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Farm"/>
+        <Class IRI="#HighRainfall"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Farm"/>
+        <Class IRI="#HighTemperature"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Farm"/>
+        <Class IRI="#IrrigationMethod"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Farm"/>
+        <Class IRI="#LateriteSoil"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Farm"/>
+        <Class IRI="#LoamySoil"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Farm"/>
+        <Class IRI="#LowRainfall"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Farm"/>
+        <Class IRI="#Maize"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Farm"/>
+        <Class IRI="#ModerateTemperature"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Farm"/>
+        <Class IRI="#Nitrogen"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Farm"/>
+        <Class IRI="#Nutrient"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Farm"/>
+        <Class IRI="#Observation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Farm"/>
+        <Class IRI="#Paddy"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Farm"/>
+        <Class IRI="#Pest"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Farm"/>
+        <Class IRI="#Phosphorus"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Farm"/>
+        <Class IRI="#Potassium"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Farm"/>
+        <Class IRI="#SandySoil"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Farm"/>
+        <Class IRI="#Sensor"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Farm"/>
+        <Class IRI="#SoilType"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Farm"/>
+        <Class IRI="#Tea"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Farm"/>
+        <Class IRI="#Vegetable"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Fertilizer"/>
+        <Class IRI="#HighRainfall"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Fertilizer"/>
+        <Class IRI="#HighTemperature"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Fertilizer"/>
+        <Class IRI="#IrrigationMethod"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Fertilizer"/>
+        <Class IRI="#LateriteSoil"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Fertilizer"/>
+        <Class IRI="#LoamySoil"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Fertilizer"/>
+        <Class IRI="#LowRainfall"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Fertilizer"/>
+        <Class IRI="#Maize"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Fertilizer"/>
+        <Class IRI="#ModerateTemperature"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Fertilizer"/>
+        <Class IRI="#Nitrogen"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Fertilizer"/>
+        <Class IRI="#Nutrient"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Fertilizer"/>
+        <Class IRI="#Observation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Fertilizer"/>
+        <Class IRI="#Paddy"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Fertilizer"/>
+        <Class IRI="#Pest"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Fertilizer"/>
+        <Class IRI="#Phosphorus"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Fertilizer"/>
+        <Class IRI="#Potassium"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Fertilizer"/>
+        <Class IRI="#SandySoil"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Fertilizer"/>
+        <Class IRI="#Sensor"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Fertilizer"/>
+        <Class IRI="#SoilType"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Fertilizer"/>
+        <Class IRI="#Tea"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Fertilizer"/>
+        <Class IRI="#Vegetable"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HighRainfall"/>
+        <Class IRI="#HighTemperature"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HighRainfall"/>
+        <Class IRI="#IrrigationMethod"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HighRainfall"/>
+        <Class IRI="#LateriteSoil"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HighRainfall"/>
+        <Class IRI="#LoamySoil"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HighRainfall"/>
+        <Class IRI="#LowRainfall"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HighRainfall"/>
+        <Class IRI="#Maize"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HighRainfall"/>
+        <Class IRI="#ModerateTemperature"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HighRainfall"/>
+        <Class IRI="#Nitrogen"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HighRainfall"/>
+        <Class IRI="#Nutrient"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HighRainfall"/>
+        <Class IRI="#Observation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HighRainfall"/>
+        <Class IRI="#Paddy"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HighRainfall"/>
+        <Class IRI="#Pest"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HighRainfall"/>
+        <Class IRI="#Phosphorus"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HighRainfall"/>
+        <Class IRI="#Potassium"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HighRainfall"/>
+        <Class IRI="#SandySoil"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HighRainfall"/>
+        <Class IRI="#Sensor"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HighRainfall"/>
+        <Class IRI="#SoilType"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HighRainfall"/>
+        <Class IRI="#Tea"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HighRainfall"/>
+        <Class IRI="#Vegetable"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HighTemperature"/>
+        <Class IRI="#IrrigationMethod"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HighTemperature"/>
+        <Class IRI="#LateriteSoil"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HighTemperature"/>
+        <Class IRI="#LoamySoil"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HighTemperature"/>
+        <Class IRI="#LowRainfall"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HighTemperature"/>
+        <Class IRI="#Maize"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HighTemperature"/>
+        <Class IRI="#ModerateTemperature"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HighTemperature"/>
+        <Class IRI="#Nitrogen"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HighTemperature"/>
+        <Class IRI="#Nutrient"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HighTemperature"/>
+        <Class IRI="#Observation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HighTemperature"/>
+        <Class IRI="#Paddy"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HighTemperature"/>
+        <Class IRI="#Pest"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HighTemperature"/>
+        <Class IRI="#Phosphorus"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HighTemperature"/>
+        <Class IRI="#Potassium"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HighTemperature"/>
+        <Class IRI="#SandySoil"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HighTemperature"/>
+        <Class IRI="#Sensor"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HighTemperature"/>
+        <Class IRI="#SoilType"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HighTemperature"/>
+        <Class IRI="#Tea"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HighTemperature"/>
+        <Class IRI="#Vegetable"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#IrrigationMethod"/>
+        <Class IRI="#LateriteSoil"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#IrrigationMethod"/>
+        <Class IRI="#LoamySoil"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#IrrigationMethod"/>
+        <Class IRI="#LowRainfall"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#IrrigationMethod"/>
+        <Class IRI="#Maize"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#IrrigationMethod"/>
+        <Class IRI="#ModerateTemperature"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#IrrigationMethod"/>
+        <Class IRI="#Nitrogen"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#IrrigationMethod"/>
+        <Class IRI="#Nutrient"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#IrrigationMethod"/>
+        <Class IRI="#Observation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#IrrigationMethod"/>
+        <Class IRI="#Paddy"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#IrrigationMethod"/>
+        <Class IRI="#Pest"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#IrrigationMethod"/>
+        <Class IRI="#Phosphorus"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#IrrigationMethod"/>
+        <Class IRI="#Potassium"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#IrrigationMethod"/>
+        <Class IRI="#SandySoil"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#IrrigationMethod"/>
+        <Class IRI="#Sensor"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#IrrigationMethod"/>
+        <Class IRI="#SoilType"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#IrrigationMethod"/>
+        <Class IRI="#Tea"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#IrrigationMethod"/>
+        <Class IRI="#Vegetable"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#LateriteSoil"/>
+        <Class IRI="#LoamySoil"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#LateriteSoil"/>
+        <Class IRI="#LowRainfall"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#LateriteSoil"/>
+        <Class IRI="#Maize"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#LateriteSoil"/>
+        <Class IRI="#ModerateTemperature"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#LateriteSoil"/>
+        <Class IRI="#Nitrogen"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#LateriteSoil"/>
+        <Class IRI="#Nutrient"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#LateriteSoil"/>
+        <Class IRI="#Observation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#LateriteSoil"/>
+        <Class IRI="#Paddy"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#LateriteSoil"/>
+        <Class IRI="#Pest"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#LateriteSoil"/>
+        <Class IRI="#Phosphorus"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#LateriteSoil"/>
+        <Class IRI="#Potassium"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#LateriteSoil"/>
+        <Class IRI="#SandySoil"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#LateriteSoil"/>
+        <Class IRI="#Sensor"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#LateriteSoil"/>
+        <Class IRI="#Tea"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#LateriteSoil"/>
+        <Class IRI="#Vegetable"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#LoamySoil"/>
+        <Class IRI="#LowRainfall"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#LoamySoil"/>
+        <Class IRI="#Maize"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#LoamySoil"/>
+        <Class IRI="#ModerateTemperature"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#LoamySoil"/>
+        <Class IRI="#Nitrogen"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#LoamySoil"/>
+        <Class IRI="#Nutrient"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#LoamySoil"/>
+        <Class IRI="#Observation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#LoamySoil"/>
+        <Class IRI="#Paddy"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#LoamySoil"/>
+        <Class IRI="#Pest"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#LoamySoil"/>
+        <Class IRI="#Phosphorus"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#LoamySoil"/>
+        <Class IRI="#Potassium"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#LoamySoil"/>
+        <Class IRI="#SandySoil"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#LoamySoil"/>
+        <Class IRI="#Sensor"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#LoamySoil"/>
+        <Class IRI="#Tea"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#LoamySoil"/>
+        <Class IRI="#Vegetable"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#LowRainfall"/>
+        <Class IRI="#Maize"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#LowRainfall"/>
+        <Class IRI="#ModerateTemperature"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#LowRainfall"/>
+        <Class IRI="#Nitrogen"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#LowRainfall"/>
+        <Class IRI="#Nutrient"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#LowRainfall"/>
+        <Class IRI="#Observation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#LowRainfall"/>
+        <Class IRI="#Paddy"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#LowRainfall"/>
+        <Class IRI="#Pest"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#LowRainfall"/>
+        <Class IRI="#Phosphorus"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#LowRainfall"/>
+        <Class IRI="#Potassium"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#LowRainfall"/>
+        <Class IRI="#SandySoil"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#LowRainfall"/>
+        <Class IRI="#Sensor"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#LowRainfall"/>
+        <Class IRI="#SoilType"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#LowRainfall"/>
+        <Class IRI="#Tea"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#LowRainfall"/>
+        <Class IRI="#Vegetable"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Maize"/>
+        <Class IRI="#ModerateTemperature"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Maize"/>
+        <Class IRI="#Nitrogen"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Maize"/>
+        <Class IRI="#Nutrient"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Maize"/>
+        <Class IRI="#Observation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Maize"/>
+        <Class IRI="#Paddy"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Maize"/>
+        <Class IRI="#Pest"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Maize"/>
+        <Class IRI="#Phosphorus"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Maize"/>
+        <Class IRI="#Potassium"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Maize"/>
+        <Class IRI="#SandySoil"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Maize"/>
+        <Class IRI="#Sensor"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Maize"/>
+        <Class IRI="#SoilType"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Maize"/>
+        <Class IRI="#Tea"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Maize"/>
+        <Class IRI="#Vegetable"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ModerateTemperature"/>
+        <Class IRI="#Nitrogen"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ModerateTemperature"/>
+        <Class IRI="#Nutrient"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ModerateTemperature"/>
+        <Class IRI="#Observation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ModerateTemperature"/>
+        <Class IRI="#Paddy"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ModerateTemperature"/>
+        <Class IRI="#Pest"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ModerateTemperature"/>
+        <Class IRI="#Phosphorus"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ModerateTemperature"/>
+        <Class IRI="#Potassium"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ModerateTemperature"/>
+        <Class IRI="#SandySoil"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ModerateTemperature"/>
+        <Class IRI="#Sensor"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ModerateTemperature"/>
+        <Class IRI="#SoilType"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ModerateTemperature"/>
+        <Class IRI="#Tea"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ModerateTemperature"/>
+        <Class IRI="#Vegetable"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Nitrogen"/>
+        <Class IRI="#Observation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Nitrogen"/>
+        <Class IRI="#Paddy"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Nitrogen"/>
+        <Class IRI="#Pest"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Nitrogen"/>
+        <Class IRI="#Phosphorus"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Nitrogen"/>
+        <Class IRI="#Potassium"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Nitrogen"/>
+        <Class IRI="#SandySoil"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Nitrogen"/>
+        <Class IRI="#Sensor"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Nitrogen"/>
+        <Class IRI="#SoilType"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Nitrogen"/>
+        <Class IRI="#Tea"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Nitrogen"/>
+        <Class IRI="#Vegetable"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Nutrient"/>
+        <Class IRI="#Observation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Nutrient"/>
+        <Class IRI="#Paddy"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Nutrient"/>
+        <Class IRI="#Pest"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Nutrient"/>
+        <Class IRI="#SandySoil"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Nutrient"/>
+        <Class IRI="#Sensor"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Nutrient"/>
+        <Class IRI="#SoilType"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Nutrient"/>
+        <Class IRI="#Tea"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Nutrient"/>
+        <Class IRI="#Vegetable"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Observation"/>
+        <Class IRI="#Paddy"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Observation"/>
+        <Class IRI="#Pest"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Observation"/>
+        <Class IRI="#Phosphorus"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Observation"/>
+        <Class IRI="#Potassium"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Observation"/>
+        <Class IRI="#SandySoil"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Observation"/>
+        <Class IRI="#Sensor"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Observation"/>
+        <Class IRI="#SoilType"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Observation"/>
+        <Class IRI="#Tea"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Observation"/>
+        <Class IRI="#Vegetable"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Paddy"/>
+        <Class IRI="#Pest"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Paddy"/>
+        <Class IRI="#Phosphorus"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Paddy"/>
+        <Class IRI="#Potassium"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Paddy"/>
+        <Class IRI="#SandySoil"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Paddy"/>
+        <Class IRI="#Sensor"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Paddy"/>
+        <Class IRI="#SoilType"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Paddy"/>
+        <Class IRI="#Tea"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Paddy"/>
+        <Class IRI="#Vegetable"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Pest"/>
+        <Class IRI="#Phosphorus"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Pest"/>
+        <Class IRI="#Potassium"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Pest"/>
+        <Class IRI="#SandySoil"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Pest"/>
+        <Class IRI="#Sensor"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Pest"/>
+        <Class IRI="#SoilType"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Pest"/>
+        <Class IRI="#Tea"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Pest"/>
+        <Class IRI="#Vegetable"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Phosphorus"/>
+        <Class IRI="#Potassium"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Phosphorus"/>
+        <Class IRI="#SandySoil"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Phosphorus"/>
+        <Class IRI="#Sensor"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Phosphorus"/>
+        <Class IRI="#SoilType"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Phosphorus"/>
+        <Class IRI="#Tea"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Phosphorus"/>
+        <Class IRI="#Vegetable"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Potassium"/>
+        <Class IRI="#SandySoil"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Potassium"/>
+        <Class IRI="#Sensor"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Potassium"/>
+        <Class IRI="#SoilType"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Potassium"/>
+        <Class IRI="#Tea"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Potassium"/>
+        <Class IRI="#Vegetable"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#SandySoil"/>
+        <Class IRI="#Sensor"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#SandySoil"/>
+        <Class IRI="#Tea"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#SandySoil"/>
+        <Class IRI="#Vegetable"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Sensor"/>
+        <Class IRI="#SoilType"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Sensor"/>
+        <Class IRI="#Tea"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Sensor"/>
+        <Class IRI="#Vegetable"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#SoilType"/>
+        <Class IRI="#Tea"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#SoilType"/>
+        <Class IRI="#Vegetable"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Tea"/>
+        <Class IRI="#Vegetable"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Pest"/>
+        <NamedIndividual IRI="#Aphids"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ClaySoil"/>
+        <NamedIndividual IRI="#ClaySoil1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SoilType"/>
+        <NamedIndividual IRI="#ClaySoil1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Coconut"/>
+        <NamedIndividual IRI="#CoconutCrop1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Crop"/>
+        <NamedIndividual IRI="#CoconutCrop1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pest"/>
+        <NamedIndividual IRI="#CoconutRhinocerosBeetle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fertilizer"/>
+        <NamedIndividual IRI="#DAPFertilizer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#IrrigationMethod"/>
+        <NamedIndividual IRI="#DripIrrigation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Farm"/>
+        <NamedIndividual IRI="#Farm1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Farm"/>
+        <NamedIndividual IRI="#Farm2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Farm"/>
+        <NamedIndividual IRI="#Farm3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#IrrigationMethod"/>
+        <NamedIndividual IRI="#FloodIrrigation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ClimateCondition"/>
+        <NamedIndividual IRI="#HighTemperatureClimate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HighTemperature"/>
+        <NamedIndividual IRI="#HighTemperatureClimate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LoamySoil"/>
+        <NamedIndividual IRI="#LoamySoil1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SoilType"/>
+        <NamedIndividual IRI="#LoamySoil1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LoamySoil"/>
+        <NamedIndividual IRI="#LoamySoil2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SoilType"/>
+        <NamedIndividual IRI="#LoamySoil2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LoamySoil"/>
+        <NamedIndividual IRI="#LoamySoil3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SoilType"/>
+        <NamedIndividual IRI="#LoamySoil3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ClimateCondition"/>
+        <NamedIndividual IRI="#LowRainfallClimate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LowRainfall"/>
+        <NamedIndividual IRI="#LowRainfallClimate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pest"/>
+        <NamedIndividual IRI="#MaizeBorer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Crop"/>
+        <NamedIndividual IRI="#MaizeCrop1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Maize"/>
+        <NamedIndividual IRI="#MaizeCrop1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ClimateCondition"/>
+        <NamedIndividual IRI="#ModerateTemperatureClimate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ModerateTemperature"/>
+        <NamedIndividual IRI="#ModerateTemperatureClimate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fertilizer"/>
+        <NamedIndividual IRI="#MuriateOfPotash"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fertilizer"/>
+        <NamedIndividual IRI="#NPK_15_15_15"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Nitrogen"/>
+        <NamedIndividual IRI="#NitrogenN"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Nutrient"/>
+        <NamedIndividual IRI="#NitrogenN"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Observation"/>
+        <NamedIndividual IRI="#Observation1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Observation"/>
+        <NamedIndividual IRI="#Observation2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Observation"/>
+        <NamedIndividual IRI="#Observation3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Crop"/>
+        <NamedIndividual IRI="#PaddyCrop1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Paddy"/>
+        <NamedIndividual IRI="#PaddyCrop1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Nutrient"/>
+        <NamedIndividual IRI="#PhosphorusP"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Phosphorus"/>
+        <NamedIndividual IRI="#PhosphorusP"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Nutrient"/>
+        <NamedIndividual IRI="#PotassiumK"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Potassium"/>
+        <NamedIndividual IRI="#PotassiumK"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Crop"/>
+        <NamedIndividual IRI="#Rice1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Paddy"/>
+        <NamedIndividual IRI="#Rice1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pest"/>
+        <NamedIndividual IRI="#RiceWeevil"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SandySoil"/>
+        <NamedIndividual IRI="#SandySoil1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SoilType"/>
+        <NamedIndividual IRI="#SandySoil1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sensor"/>
+        <NamedIndividual IRI="#Sensor1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sensor"/>
+        <NamedIndividual IRI="#Sensor2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sensor"/>
+        <NamedIndividual IRI="#Sensor3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#IrrigationMethod"/>
+        <NamedIndividual IRI="#SprinklerIrrigation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Crop"/>
+        <NamedIndividual IRI="#TeaCrop1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tea"/>
+        <NamedIndividual IRI="#TeaCrop1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pest"/>
+        <NamedIndividual IRI="#TeaMosquito"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fertilizer"/>
+        <NamedIndividual IRI="#UreaFertilizer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Crop"/>
+        <NamedIndividual IRI="#VegetableCrop1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Vegetable"/>
+        <NamedIndividual IRI="#VegetableCrop1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ClimateCondition"/>
+        <NamedIndividual IRI="#WetZoneClimate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HighRainfall"/>
+        <NamedIndividual IRI="#WetZoneClimate"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDeficiency"/>
+        <NamedIndividual IRI="#ClaySoil1"/>
+        <NamedIndividual IRI="#NitrogenN"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#affectedByPest"/>
+        <NamedIndividual IRI="#CoconutCrop1"/>
+        <NamedIndividual IRI="#CoconutRhinocerosBeetle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#growsInSoil"/>
+        <NamedIndividual IRI="#CoconutCrop1"/>
+        <NamedIndividual IRI="#SandySoil1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requiresNutrient"/>
+        <NamedIndividual IRI="#CoconutCrop1"/>
+        <NamedIndividual IRI="#PotassiumK"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#suitableClimate"/>
+        <NamedIndividual IRI="#CoconutCrop1"/>
+        <NamedIndividual IRI="#WetZoneClimate"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#treatsDeficiency"/>
+        <NamedIndividual IRI="#DAPFertilizer"/>
+        <NamedIndividual IRI="#PhosphorusP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSensor"/>
+        <NamedIndividual IRI="#Farm1"/>
+        <NamedIndividual IRI="#Sensor1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#locatedIn"/>
+        <NamedIndividual IRI="#Farm1"/>
+        <NamedIndividual IRI="#WetZoneClimate"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSensor"/>
+        <NamedIndividual IRI="#Farm2"/>
+        <NamedIndividual IRI="#Sensor2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#locatedIn"/>
+        <NamedIndividual IRI="#Farm2"/>
+        <NamedIndividual IRI="#LowRainfallClimate"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSensor"/>
+        <NamedIndividual IRI="#Farm3"/>
+        <NamedIndividual IRI="#Sensor3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#locatedIn"/>
+        <NamedIndividual IRI="#Farm3"/>
+        <NamedIndividual IRI="#ModerateTemperatureClimate"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDeficiency"/>
+        <NamedIndividual IRI="#LoamySoil1"/>
+        <NamedIndividual IRI="#NitrogenN"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDeficiency"/>
+        <NamedIndividual IRI="#LoamySoil2"/>
+        <NamedIndividual IRI="#PhosphorusP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDeficiency"/>
+        <NamedIndividual IRI="#LoamySoil3"/>
+        <NamedIndividual IRI="#PotassiumK"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#affectedByPest"/>
+        <NamedIndividual IRI="#MaizeCrop1"/>
+        <NamedIndividual IRI="#MaizeBorer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#growsInSoil"/>
+        <NamedIndividual IRI="#MaizeCrop1"/>
+        <NamedIndividual IRI="#LoamySoil2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requiresNutrient"/>
+        <NamedIndividual IRI="#MaizeCrop1"/>
+        <NamedIndividual IRI="#PhosphorusP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#suitableClimate"/>
+        <NamedIndividual IRI="#MaizeCrop1"/>
+        <NamedIndividual IRI="#ModerateTemperatureClimate"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#treatsDeficiency"/>
+        <NamedIndividual IRI="#MuriateOfPotash"/>
+        <NamedIndividual IRI="#PotassiumK"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#treatsDeficiency"/>
+        <NamedIndividual IRI="#NPK_15_15_15"/>
+        <NamedIndividual IRI="#NitrogenN"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#treatsDeficiency"/>
+        <NamedIndividual IRI="#NPK_15_15_15"/>
+        <NamedIndividual IRI="#PhosphorusP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#treatsDeficiency"/>
+        <NamedIndividual IRI="#NPK_15_15_15"/>
+        <NamedIndividual IRI="#PotassiumK"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#observedAtFarm"/>
+        <NamedIndividual IRI="#Observation1"/>
+        <NamedIndividual IRI="#Farm1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#observedAtFarm"/>
+        <NamedIndividual IRI="#Observation2"/>
+        <NamedIndividual IRI="#Farm2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#observedAtFarm"/>
+        <NamedIndividual IRI="#Observation3"/>
+        <NamedIndividual IRI="#Farm3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#affectedByPest"/>
+        <NamedIndividual IRI="#PaddyCrop1"/>
+        <NamedIndividual IRI="#RiceWeevil"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#growsInSoil"/>
+        <NamedIndividual IRI="#PaddyCrop1"/>
+        <NamedIndividual IRI="#LoamySoil1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requiresNutrient"/>
+        <NamedIndividual IRI="#PaddyCrop1"/>
+        <NamedIndividual IRI="#NitrogenN"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#suitableClimate"/>
+        <NamedIndividual IRI="#PaddyCrop1"/>
+        <NamedIndividual IRI="#WetZoneClimate"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usesIrrigation"/>
+        <NamedIndividual IRI="#PaddyCrop1"/>
+        <NamedIndividual IRI="#FloodIrrigation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDeficiency"/>
+        <NamedIndividual IRI="#SandySoil1"/>
+        <NamedIndividual IRI="#PotassiumK"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#generatesObservation"/>
+        <NamedIndividual IRI="#Sensor1"/>
+        <NamedIndividual IRI="#Observation1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#generatesObservation"/>
+        <NamedIndividual IRI="#Sensor2"/>
+        <NamedIndividual IRI="#Observation2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#generatesObservation"/>
+        <NamedIndividual IRI="#Sensor3"/>
+        <NamedIndividual IRI="#Observation3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#affectedByPest"/>
+        <NamedIndividual IRI="#TeaCrop1"/>
+        <NamedIndividual IRI="#TeaMosquito"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#growsInSoil"/>
+        <NamedIndividual IRI="#TeaCrop1"/>
+        <NamedIndividual IRI="#ClaySoil1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requiresNutrient"/>
+        <NamedIndividual IRI="#TeaCrop1"/>
+        <NamedIndividual IRI="#NitrogenN"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#suitableClimate"/>
+        <NamedIndividual IRI="#TeaCrop1"/>
+        <NamedIndividual IRI="#HighTemperatureClimate"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#treatsDeficiency"/>
+        <NamedIndividual IRI="#UreaFertilizer"/>
+        <NamedIndividual IRI="#NitrogenN"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#affectedByPest"/>
+        <NamedIndividual IRI="#VegetableCrop1"/>
+        <NamedIndividual IRI="#Aphids"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#growsInSoil"/>
+        <NamedIndividual IRI="#VegetableCrop1"/>
+        <NamedIndividual IRI="#LoamySoil3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requiresNutrient"/>
+        <NamedIndividual IRI="#VegetableCrop1"/>
+        <NamedIndividual IRI="#NitrogenN"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requiresNutrient"/>
+        <NamedIndividual IRI="#VegetableCrop1"/>
+        <NamedIndividual IRI="#PhosphorusP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#suitableClimate"/>
+        <NamedIndividual IRI="#VegetableCrop1"/>
+        <NamedIndividual IRI="#LowRainfallClimate"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usesIrrigation"/>
+        <NamedIndividual IRI="#VegetableCrop1"/>
+        <NamedIndividual IRI="#DripIrrigation"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasMoistureLevel"/>
+        <NamedIndividual IRI="#ClaySoil1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">55.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPHLevel"/>
+        <NamedIndividual IRI="#ClaySoil1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">5.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNutrientPercentage"/>
+        <NamedIndividual IRI="#DAPFertilizer"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">18.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasFarmSize"/>
+        <NamedIndividual IRI="#Farm1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">2.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasFarmSize"/>
+        <NamedIndividual IRI="#Farm2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasFarmSize"/>
+        <NamedIndividual IRI="#Farm3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTemperatureValue"/>
+        <NamedIndividual IRI="#HighTemperatureClimate"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">35.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasMoistureLevel"/>
+        <NamedIndividual IRI="#LoamySoil1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">45.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPHLevel"/>
+        <NamedIndividual IRI="#LoamySoil1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">6.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasMoistureLevel"/>
+        <NamedIndividual IRI="#LoamySoil2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">40.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPHLevel"/>
+        <NamedIndividual IRI="#LoamySoil2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">6.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasMoistureLevel"/>
+        <NamedIndividual IRI="#LoamySoil3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">50.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPHLevel"/>
+        <NamedIndividual IRI="#LoamySoil3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">6.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRainfallValue"/>
+        <NamedIndividual IRI="#LowRainfallClimate"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">800.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTemperatureValue"/>
+        <NamedIndividual IRI="#ModerateTemperatureClimate"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">28.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNutrientPercentage"/>
+        <NamedIndividual IRI="#MuriateOfPotash"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">60.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNutrientPercentage"/>
+        <NamedIndividual IRI="#NPK_15_15_15"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">15.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSensorValue"/>
+        <NamedIndividual IRI="#Observation1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">12.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTimestamp"/>
+        <NamedIndividual IRI="#Observation1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2026-02-22T08:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSensorValue"/>
+        <NamedIndividual IRI="#Observation2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">30.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTimestamp"/>
+        <NamedIndividual IRI="#Observation2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2026-02-22T09:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSensorValue"/>
+        <NamedIndividual IRI="#Observation3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">18.7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTimestamp"/>
+        <NamedIndividual IRI="#Observation3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2026-02-22T10:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasMoistureLevel"/>
+        <NamedIndividual IRI="#SandySoil1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">35.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPHLevel"/>
+        <NamedIndividual IRI="#SandySoil1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">6.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNutrientPercentage"/>
+        <NamedIndividual IRI="#UreaFertilizer"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">46.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRainfallValue"/>
+        <NamedIndividual IRI="#WetZoneClimate"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">2500.0</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#affectedByPest"/>
+        <Class IRI="#Crop"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#generatesObservation"/>
+        <Class IRI="#Sensor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#growsInSoil"/>
+        <Class IRI="#Crop"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDeficiency"/>
+        <Class IRI="#SoilType"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSensor"/>
+        <Class IRI="#Farm"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#locatedIn"/>
+        <Class IRI="#Farm"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#observedAtFarm"/>
+        <Class IRI="#Observation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#recommendedFertilizer"/>
+        <Class IRI="#Crop"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#requiresNutrient"/>
+        <Class IRI="#Crop"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#suitableClimate"/>
+        <Class IRI="#Crop"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#treatsDeficiency"/>
+        <Class IRI="#Fertilizer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usesIrrigation"/>
+        <Class IRI="#Crop"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#affectedByPest"/>
+        <Class IRI="#Pest"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#generatesObservation"/>
+        <Class IRI="#Observation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#growsInSoil"/>
+        <Class IRI="#SoilType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDeficiency"/>
+        <Class IRI="#Nutrient"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSensor"/>
+        <Class IRI="#Sensor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#locatedIn"/>
+        <Class IRI="#ClimateCondition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#observedAtFarm"/>
+        <Class IRI="#Farm"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#recommendedFertilizer"/>
+        <Class IRI="#Fertilizer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#requiresNutrient"/>
+        <Class IRI="#Nutrient"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#suitableClimate"/>
+        <Class IRI="#ClimateCondition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#treatsDeficiency"/>
+        <Class IRI="#Nutrient"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usesIrrigation"/>
+        <Class IRI="#IrrigationMethod"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasFarmSize"/>
+        <Class IRI="#Farm"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasMoistureLevel"/>
+        <Class IRI="#SoilType"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasNutrientPercentage"/>
+        <Class IRI="#Fertilizer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasPHLevel"/>
+        <Class IRI="#SoilType"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasRainfallValue"/>
+        <Class IRI="#ClimateCondition"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSensorValue"/>
+        <Class IRI="#Observation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTemperatureValue"/>
+        <Class IRI="#ClimateCondition"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTimestamp"/>
+        <Class IRI="#Observation"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasFarmSize"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasMoistureLevel"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasNutrientPercentage"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasPHLevel"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasRainfallValue"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSensorValue"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasTemperatureValue"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasTimestamp"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
